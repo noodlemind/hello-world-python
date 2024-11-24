@@ -22,7 +22,4 @@ RUN pip3 install -r requirements.txt
 CMD ["python3", "app.py"]
 
 # Optional: expose the port the application runs on
-EXPOSE 8080FROM ubuntu:latest
-LABEL authors="noodlemind"
-
-ENTRYPOINT ["top", "-b"]
+EXPOSE 8080

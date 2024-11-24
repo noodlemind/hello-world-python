@@ -15,9 +15,6 @@ RUN apt-get update && apt-get install -y \
 COPY . /app
 WORKDIR /app
 
-# Install any Python dependencies
-RUN pip3 install -r requirements.txt
-
 # Command to run the application (assuming app.py as entry point)
 CMD ["python3", "app.py"]
 
